@@ -46,7 +46,8 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <button className="bg-white text-gray-900 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-200">
+          <button className="bg-white text-gray-900 px-8 py-3 rounded-full font-medium hover:bg-gradient-to-r hover:from-orange-600 hover:to-red-600 
+              hover:text-white transition-all duration-500">
             Book Consultation
           </button>
         </motion.div>
