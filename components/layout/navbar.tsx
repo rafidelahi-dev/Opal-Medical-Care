@@ -20,7 +20,7 @@ const NavLinkWithDropdown = ({
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         className="flex items-center space-x-1 text-sm tracking-wider 
         relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 
-        after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 
+        after:bg-gradient-to-r after:from-orange-500 after:to-red-500 
         hover:after:w-full after:transition-all duration-300 
         md:hover:after:w-full"
       >
@@ -51,9 +51,9 @@ const NavLinkWithDropdown = ({
             <Link
               key={item.title}
               href={item.href}
-              className="block px-4 py-2 text-sm text-gray-700 
-              hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 
-              transition-colors duration-200"
+              className={`block px-4 py-2 text-sm text-gray-700 
+              hover:bg-gradient-to-r hover:from-orange-50 hover:to-red-50 
+              transition-colors duration-200`}
             >
               {item.title}
             </Link>
@@ -121,10 +121,10 @@ export function Navbar() {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 
+    <nav className={`fixed w-full z-50 transition-all duration-300 pt-4 pb-2
       ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       {/* Desktop Navbar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 hidden lg:block">
+      <div className="max-w-8xl  px-4 sm:px-6 lg:px-8 hidden lg:block">
         <div className="flex justify-between items-center h-20">
           {/* Left Menu */}
           <div className="flex items-center space-x-12">
@@ -153,7 +153,7 @@ export function Navbar() {
               href="/about" 
               className="text-sm tracking-wider group relative
               after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 
-              after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 
+              after:bg-gradient-to-r after:from-orange-500 after:to-red-500 
               hover:after:w-full after:transition-all duration-300"
             >
               ABOUT
@@ -162,7 +162,7 @@ export function Navbar() {
               href="/contact" 
               className="text-sm tracking-wider group relative
               after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 
-              after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 
+              after:bg-gradient-to-r after:from-orange-500 after:to-red-500 
               hover:after:w-full after:transition-all duration-300"
             >
               CONTACT
@@ -170,7 +170,7 @@ export function Navbar() {
             <Link 
               href="/book" 
               className="text-sm tracking-wider border border-black px-6 py-2 
-              hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 
+              hover:bg-gradient-to-r hover:from-orange-600 hover:to-red-600 
               hover:text-white hover:border-transparent transition-all duration-300"
             >
               BOOK NOW
